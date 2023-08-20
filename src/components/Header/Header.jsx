@@ -6,7 +6,7 @@ const Header = () => {
 
   useEffect(() => {
     tg.ready();
-  }, []);
+  }, [tg]);
 
   const onClose = () => {
     tg.close();
