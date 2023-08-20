@@ -11,7 +11,6 @@ const Product = ({ price, title, img, description }) => {
         </ImageWrapper>
         <Price>{price}</Price>
       </ProductRoot>
-      ;
     </>
   );
 };

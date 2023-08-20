@@ -26,7 +26,6 @@ const ProductsList = () => {
   return (
     <ProductsListRoot>
       {data.map((item, index) => {
-
         const { description, img, price, title } = item;
 
         return <Product key={index} description={description} img={img} price={price} title={title} />;
@@ -37,7 +36,9 @@ const ProductsList = () => {
 
 const ProductsListRoot = styled('div')`
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap:20px;
 `;
 
 export default ProductsList;
