@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       work
-      <button onClick={onClose}></button>
+      <button onClick={onClose}>123</button>
     </>
   );
 }
