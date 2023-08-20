@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <HeaderRoot>
       <Button onClick={onClose}>Close</Button>
-      <UserName>Приветствую вас, {tg.initDataUnsafe?.user?.username}</UserName>
+      {/*<UserName>Приветствую вас, {tg.initDataUnsafe?.user?.username}</UserName>*/}
         <Button onClick={onToggleButton}>toggle</Button>
     </HeaderRoot>
   );
