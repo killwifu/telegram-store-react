@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
-  background: var(--tg-color-scheme);
+body{
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+	font-size: 18px;
 }
+
+
+
+
+

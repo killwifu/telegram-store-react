@@ -34,17 +34,14 @@ const ProductRoot = styled('div')`
 `;
 
 const Price = styled('button')`
-  color: black;
   background-color: white;
 `;
 
 const Description = styled('p')`
-  color: black;
 `;
 
 const Title = styled('span')`
   display: block;
-  color: black;
 `;
 
 export default Product;
