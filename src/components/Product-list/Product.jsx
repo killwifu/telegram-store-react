@@ -12,7 +12,7 @@ const Product = ({ price, title, img, description, size }) => {
         <Price>{price}</Price>
         <SizeContainer>
           {size.map((item, index) => {
-            return <Size disabled={true} key={index}>{item}</Size>;
+            return <Size key={index}>{item}</Size>;
           })}
         </SizeContainer>
       </ProductRoot>
@@ -20,11 +20,7 @@ const Product = ({ price, title, img, description, size }) => {
   );
 };
 
-const Size =
-  styled('button') <
-  { disabled: boolean } >
-  `
-${({ disabled }) => (disabled ? `cursor:not-allowed` : `cursor:pointer`)}
+const Size = styled('button')`
   width: 100%;
 `;
 
