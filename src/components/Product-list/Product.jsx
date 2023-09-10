@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const Product = ({ price, title, img, description }) => {
+const Product = ({ price, title, img, description, size }) => {
   return (
     <>
       <ProductRoot>
@@ -10,10 +10,28 @@ const Product = ({ price, title, img, description }) => {
           <img src={img} alt={title} />
         </ImageWrapper>
         <Price>{price}</Price>
+        <SizeContainer>
+          {size.map((item, index) => {
+            return <Size disabled={true} key={index}>{item}</Size>;
+          })}
+        </SizeContainer>
       </ProductRoot>
     </>
   );
 };
+
+const Size =
+  styled('button') <
+  { disabled: boolean } >
+  `
+${({ disabled }) => (disabled ? `cursor:not-allowed` : `cursor:pointer`)}
+  width: 100%;
+`;
+
+const SizeContainer = styled('div')`
+  display: flex;
+  align-items: center;
+`;
 
 const ImageWrapper = styled('div')`
   height: 200px;
@@ -35,12 +53,19 @@ const ProductRoot = styled('div')`
 
 const Price = styled('button')`
   background-color: white;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: violet;
+  background-color: gray;
 `;
 
 const Description = styled('p')`
+  font-family: 'Montserrat';
+  font-size: 24px;
 `;
 
 const Title = styled('span')`
+  font-family: 'Montserrat';
   display: block;
 `;
 
