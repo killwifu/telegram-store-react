@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Lato:ital@0;1&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Ermilov';
+  src: url('shared/fonts/Ermilov-bold.otf') format('opentype');
+}
 
 * {
   margin: 0;
@@ -6,13 +9,8 @@
   box-sizing: border-box;
 }
 
-body{
-	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
-	font-size: 18px;
+body {
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
+  font-size: 18px;
 }
-
-
-
-
-
