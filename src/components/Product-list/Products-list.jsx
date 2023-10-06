@@ -8,7 +8,7 @@ const data = [
     description: 'Off white',
     price: '5000 руб',
     img: 'https://gosneakers.ru/wa-data/public/shop/products/38/18/1838/images/7797/7797.440@2x.JPG',
-    size: ['43','42','41','44','45']
+    size: [,'42','41','44','45']
   },
   {
     title: 'Nike',
