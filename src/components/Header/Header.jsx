@@ -23,7 +23,9 @@ const Header = () => {
       <LogoWrapper>
         <img src={Logo} alt='Drue' />
       </LogoWrapper>
-      <FAQText>Как это работает?</FAQText>
+      <FAQText>
+        Как <br /> это работает?
+      </FAQText>
     </HeaderRoot>
   );
 };
@@ -49,7 +51,7 @@ const LogoWrapper = styled('div')`
 `;
 
 const HeaderRoot = styled('header')`
-  padding: 10px;
+  padding: 7px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
